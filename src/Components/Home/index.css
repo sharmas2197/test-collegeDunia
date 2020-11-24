@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+.container {
+  overflow: hidden auto;
+  height: 100vh;
+}
+.inner-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 49px 0px 32px 0px;
+  position: relative;
+}
+.header {
+  font-family: Roboto;
+  font-size: 18.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+  margin-left: 50px;
+}
+
+/* card styling starts */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 50px 30px 50px;
+}
+.college_card {
+  position: relative;
+  max-width: 639px;
+  width: 45%;
+  min-height: 235px;
+  border-radius: 5px;
+  box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+  border: solid 0.2px #eeeeee;
+  background-color: #fff;
+  margin: 0px 60px 60px 0;
+}
+/* card styling ends */
+
+/* top block styling starts */
+.top_block {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.top_block img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+  object-position: top;
+}
+
+.top_block .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* promoted tag starts */
+.promoted {
+  position: absolute;
+  top: -12px;
+  right: -1px;
+  width: 100%;
+  z-index: 999999;
+}
+.promoted .promoted_flag_block {
+  float: right;
+}
+.promoted .promoted_flag_block .promoted_flag {
+  padding: 8px 35px 8px 25px;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  background-color: #68a7ff;
+}
+
+.promoted .promoted_flag_block .promoted_flag span:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #68a7ff transparent transparent;
+  position: absolute;
+  top: 0;
+  left: -18px;
+  border-width: 18px 18px 0 0;
+  transform: rotate(90deg);
+}
+
+.promoted .promoted_flag_block .promoted_flag span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 0 0 18px;
+  border-color: transparent transparent transparent #68a7ff;
+  bottom: 0;
+  left: -18px;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+/* promoted tag ends */
+
+/* rating starts */
+.rating {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #f5a626;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+.rating-text {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: center;
+  color: #fff;
+}
+.rating-text-style {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* rating ends */
+
+/* tag starts */
+.tag-college {
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  width: 100%;
+}
+.tag-college .tag-college-button {
+  padding: 10px 17px;
+  border-radius: 16.5px;
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+  margin-left: 10px;
+}
+.tag-college .ranking {
+  float: right;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #fff;
+  margin-right: 16px;
+  padding-top: 4px;
+}
+/* tag ends  */
+
+/* middle block starts  */
+.middle_block {
+  display: flex;
+  min-height: 10px;
+  padding: 15px 22px 10px 15px;
+  justify-content: space-between;
+  font-family: Roboto;
+}
+.middle_block .college_name {
+  font-size: 18.5px;
+  font-weight: bold;
+  line-height: 0.97;
+  color: #444444;
+}
+.middle_block .nearest_place {
+  margin-top: 12px;
+}
+.middle_block .famous_nearest_places {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #adadad;
+}
+.middle_block .famous_nearest_places .match {
+  color: #37b396;
+}
+.middle_block .nearest_place span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #adadad;
+  padding: 0px 6px;
+}
+
+.middle_block .nearest_place span:nth-child(1) {
+  color: #444444;
+  border-right: 1px solid #444444;
+  padding: 0;
+  padding-right: 6px;
+}
+
+.middle_block .college-fee {
+  text-align: right;
+}
+.middle_block .college-fee .discounted_fee .fee {
+  font-size: 28.5px;
+  font-weight: bold;
+  line-height: 0.89;
+  color: #dd1c26;
+  margin-top: 8px;
+}
+.middle_block .college-fee .discounted_fee .fee_cycle {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  color: #444444;
+}
+.middle_block .college-fee .original_fees {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.64;
+  color: #fff;
+}
+
+.middle_block .college-fee .original_fees .original {
+  color: #444444;
+  text-decoration: line-through;
+}
+/* middle block ends  */
+
+/* bottom block starts  */
+.bottom_block {
+  position: relative;
+  min-height: 10px;
+  padding: 10px 0;
+}
+.bottom_block .offer-button {
+  display: inline-block;
+  padding: 11px 21px 11px 17px;
+  background-color: #ccf5e7;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+.bottom_block .amenties-list {
+  margin: 6px 10px 0px 0px;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+.bottom_block .amenties-list li {
+  margin-left: 10px;
+  display: inline-block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 13.5px;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #37b396;
+}
+.bottom_block .amenties-list li:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #37b396;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.bottom_block .amenties-list li:nth-child(1)::before {
+  display: none;
+}
+
+/* bottom block ends  */
+
+/* media queries for responsiveness */
+@media (min-width: 1201px) and (max-width: 1340px) {
+  .college_card {
+    max-width: 44%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .college_card {
+    max-width: 45%;
+    width: 100%;
+    margin: 0px 50px 60px 0;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 1100px) {
+  .college_card {
+    max-width: 639px;
+    width: 100%;
+    margin: 0px 0 50px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .header {
+    margin-left: 30px;
+  }
+  .card-container {
+    margin: 50px 30px 30px 30px;
+  }
+  .college_card {
+    max-width: 639px;
+    width: 100%;
+    margin: 0px 0 50px 0;
+  }
+}
